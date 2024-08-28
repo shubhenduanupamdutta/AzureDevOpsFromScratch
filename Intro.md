@@ -114,3 +114,66 @@ In a typical software product lifecycle, following steps are followed:
 - `Tasks` - Tasks are the smallest unit of work. **Tasks** usually correspond to time duration of hours.
 ------------------------------------------------------
 ## Connect Azure Boards with GitHub
+======================================================
+- Go to `Project Settings` -> `Boards` -> `GitHub connections`.
+- Click on `Connect your GitHub account`.
+- You will be taken to GitHub, where you will have to authorize Azure DevOps.
+- Select the repository you want to connect with Azure DevOps.
+- Then you can see the repository in the `GitHub connections` tab.
+------------------------------------------------------
+## Azure Queries
+======================================================
+- `Queries` are useful to find certain data around your work, items in your sprints and get the results in a required format.
+- You can go to `Boards` -> `Queries` and create a new query.
+- *Bulk Update, Assign or reassign* - Queries are used to do bulk update, assign, or reassign work items or task.
+- *Email list of work items*
+- *Reporting Feature*
+------------------------------------------------------
+## Azure Repos
+======================================================
+- Similar to `GitHub`, `Azure Repos` is a place where you can store your code.
+- `Store and Collaborate`.
+- All the features in GitHub are available in `Azure Repos`.
+- `Official Definition` - **Get unlimited, cloud-hosted private Git repos and collaborate to build better code with pull request and advanced file management.**
+------------------------------------------------------
+## What is version control?
+======================================================
+- `Version Control System (VCS)` **is nothing but a tool to manage your code at a centralized place and track all the changes you or team has done.**
+
+### Why do we need version control?
+- **Collaboration**
+- **Storing Versions (Properly) Saving a version of your project after making changes.**
+- **Restoring Previous Versions**
+- **Understanding What Happened**
+- **Backup**
+### Types of Version Control
+- **Git** - Distributed Version Control System
+- **TFVC** - `Team Foundation Version Control` - Centralized Version Control System
+
+### Git and GitHub
+- `GitHub` is a platform where you can store your code and collaborate with your team.
+- `Git` is a version control system that is used to manage your code.
+------------------------------------------------------
+## Setup Development Environment
+======================================================
+### What is required?
+- **Install Git**
+- **Install Visual Studio Code**
+- **GitHub Account**
+- **Azure DevOps Account**
+- **Azure Repos**
+
+### Create/Import Repository
+- Go to `Repos`.
+- On top, you can click and you will get options to create a new repository or import a repository.
+
+------------------------------------------------------
+## Some Terminologies - 04
+======================================================
+### Understanding Git Terminology
+- **Branches** - Copy of `main` or some other branch.
+- **Commit** - Snapshot of the project's currently staged changes.
+- **Pull Request** - Request to merge changes from one branch to another.
+------------------------------------------------------
+## CI/CD
+======================================================
