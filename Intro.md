@@ -177,3 +177,28 @@ In a typical software product lifecycle, following steps are followed:
 ------------------------------------------------------
 ## CI/CD
 ======================================================
+- **CI/CD** stands for `Continuous Integration/Continuous Deployment`.
+- **CI** - `Continuous Integration` is a development practice that requires developers to integrate code into a shared repository several times a day. It simply means merging of code from different branches in one single branch and making sure that code integration is happening smoothly and flawlessly.
+- **CD** - `Continuous Delivery/Deployment` is a practice that allows you to automate the process of deploying code to production. When your code is merged and ready, you are going to build it. The pipeline is going to build it and it will create some `artifact` (a package that is ready to be deployed). `CD` basically means building the required artifact and deploying it to the production environment.
+- **Pipelines** - Pipelines are used to automate the process of building, testing, and deploying code. This is the place where `CI/CD` happens. So merging of code and creating the artifact and deploying it to the production environment is done using `Pipelines`.
+------------------------------------------------------
+## Azure Pipelines
+======================================================
+- **Microsoft Definition** - *Build, test and deploy with `CI/CD` which works with any language, platform and cloud. Connect to GitHub or any other Git provider and deploy continuously.*
+- What are the benefits of `Azure Pipelines`?
+    - **Execution of Continuous Integration takes place.**
+    - **Builds or Run Jobs/task when code is submitted.**
+    - **Build Agent - helps to build the code.**
+    - **Outputs a build artifact(.zip file, .jar file, .exe file etc.)**
+    - 
+### Types of Pipelines
+- **Build Pipeline** - Used to build the code.
+- **Release Pipeline** - Used to deploy the code.
+
+### Creating Pipeline
+- Go to `Pipelines` -> `Create Pipeline`.
+- You will be asked to choose the repository.
+- You can choose `GitHub` or `Azure Repos`.
+- You will be asked to choose the template.
+- You can choose `Starter Pipeline` or `YAML`.
+- You can choose `Starter Pipeline` if you are new to `Azure Pipelines`.
