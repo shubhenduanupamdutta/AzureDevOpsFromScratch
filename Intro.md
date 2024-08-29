@@ -202,3 +202,49 @@ In a typical software product lifecycle, following steps are followed:
 - You will be asked to choose the template.
 - You can choose `Starter Pipeline` or `YAML`.
 - You can choose `Starter Pipeline` if you are new to `Azure Pipelines`.
+------------------------------------------------------
+## CI/CD Using GitHub Actions
+======================================================
+### GitHub Actions
+- **GitHub Actions** is a feature of GitHub that enables the creation of custom automated workflows triggered by specific events in a repository.
+- These workflows are defined in `YAML` file and consist of jobs, steps, and actions. A workflow can be configured to run when events like code pushes, pull requests, issues, etc. occur.
+- Each workflow contains one or more jobs, each job contains a series of steps, and these steps utilize reusable actions or custom commands to perform tasks such as building, testing, deploying or notifying stakeholders.
+======================================================
+### GitHub Actions: Workflow
+- **Workflow** is a defined sequence of automated steps and actions that are executed whenever specific events occur in a GitHub repository.
+- These events can range from pushing new code, creating pull requests, opening issues or even scheduled events.
+- Workflows allow you to automate various tasks such as building, testing, deploying, and notifying stakeholders. Making it easier to manage and maintain your software projects lifecycle.
+======================================================
+### Understanding GitHub Actions YAML File
+```yaml
+name: name-of-workflow
+
+on:
+    push:
+        branches: ["main"]
+    
+jobs:   # Jobs are the main building blocks of a workflow
+    build:
+        runs-on: self-hosted    # Runner environment will be maintained by user
+
+        steps:  # Steps are the individual tasks that will be
+        - uses: actions/checkout@v4
+        - name: Set up Node.js
+          uses: actions/setup-node@v2
+          with:
+            node-version: '14'
+        - name: Install dependencies
+            run: npm install
+        - name: Build
+            run: npm run build
+        - name: Test
+            run: npm test
+```
+- All the YAML files are stored in `.github/workflows` directory.
+======================================================
+### Setup Self-Hosted Runner
+- Go to `Settings` -> `Actions` -> `Runners`
+- And go through the steps provided according to your OS.
+- That simple.
+======================================================
+
